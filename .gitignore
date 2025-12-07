@@ -176,3 +176,4 @@ cython_debug/
 # Additional files to ignore
 .DS_Store
 *.docx
+*.code-workspace
