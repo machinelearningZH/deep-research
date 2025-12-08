@@ -8,7 +8,7 @@ Zu Demonstrationszwecken bezieht die App für die Antworten eine kleine Auswahl 
 
 Verantwortlich: Statistisches Amt, [Team Data](mailto:datashop@statistik.zh.ch).
 
-App-Version v0.2. Letzte Aktualisierung 23.7.2025
+App-Version v0.3. Letzte Aktualisierung 08.12.2025
 
 ### Wie funktioniert die App?
 

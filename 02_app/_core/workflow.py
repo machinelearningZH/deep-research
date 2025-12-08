@@ -64,6 +64,9 @@ class ResearchWorkflow:
                 False,
                 self.final_docs if self.final_docs is not None else pd.DataFrame(),
             )
+        
+        # Always include the original user query as well.
+        search_queries.extend([user_query])
 
         # Step 2: Execute searches
         status_callback(

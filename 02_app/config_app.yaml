@@ -4,36 +4,21 @@ app_name: "Deep Research"
 
 # Environment and API settings
 api_keys:
-  dotenv_path: "/.env"
+  dotenv_path: ".env"
 
 # LLM Model choices
 models:
-  performance_low: "google/gemini-2.5-flash-lite-preview-06-17"
-  performance_medium: "google/gemini-2.5-flash"
+  performance_low: "google/gemini-2.5-flash-lite-preview-09-2025"
+  performance_medium: "google/gemini-2.5-flash-preview-09-2025"
   performance_high: "google/gemini-2.5-pro"
   # Fallback model if context length exceeds the limit of the primary model.
   fallback: "google/gemini-2.5-pro"
-
-  # Tested models for final report generation
-  # Check maximal context length for each model and adjust the fallback limit accordingly.
-
-  # performance_high: "anthropic/claude-opus-4" # very good
-  # performance_high: "anthropic/claude-sonnet-4" # very good
-  # performance_high: "google/gemini-2.5-pro" # very good
-
-  # performance_high: "openai/gpt-4.1" # good
-  # performance_high: "openai/chatgpt-4o-latest" # good
-
-  # performance_high: "mistralai/mistral-large-2411" # ok
-  # performance_high: "openai/o4-mini" # ok
-  # performance_high: "openai/o3-mini" # ok
-  # performance_high: "moonshotai/kimi-k2" # ok
 
 # In development mode, set all model calls to the cheapest and fastest model.
 # Also max_queries, search_limit, and autocut are set to low values for development.
 development:
   enabled: false
-  model_for_dev_testing: "google/gemini-2.5-flash-lite-preview-06-17"
+  model_for_dev_testing: "google/gemini-2.5-flash-lite-preview-09-2025"
 
 # Temperature settings for the different tasks
 temperature:
@@ -46,13 +31,12 @@ llm:
   system_message: "You are a helpful and excellent research assistant."
   fallback_token_limit: 195000 # If the context length exceeds this limit, the fallback model will be used.
   max_tokens_output: 60000 # This only works for Gemini models.
-  tenacity_wait_multiplier: 1
-  tenacity_wait_max: 10
+  tenacity_wait_max: 3
   tenacity_stop_attempts: 3
   token_count_model: "gpt-4o"
 
 parallelization:
-  max_workers: 25
+  max_workers: 50
 
 # Sentence Transformer settings
 sentence_transformers:

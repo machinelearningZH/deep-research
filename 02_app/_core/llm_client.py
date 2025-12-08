@@ -5,7 +5,7 @@ import requests
 import json
 from datetime import datetime
 from openai import OpenAI
-from tenacity import retry, stop_after_attempt, wait_random_exponential
+from tenacity import retry, stop_after_attempt, stop_after_delay
 from dotenv import load_dotenv
 from _core.config import config
 from _core.logger import custom_logger
@@ -55,11 +55,10 @@ class OpenRouterClient(LLMClient):
 
         # Retry configuration
         self.retry_decorator = retry(
-            wait=wait_random_exponential(
-                multiplier=config["llm"]["tenacity_wait_multiplier"],
-                max=config["llm"]["tenacity_wait_max"],
-            ),
-            stop=stop_after_attempt(config["llm"]["tenacity_stop_attempts"]),
+            stop=(
+                stop_after_delay(config["llm"]["tenacity_wait_max"])
+                | stop_after_attempt(config["llm"]["tenacity_stop_attempts"])
+            )
         )
 
     @property

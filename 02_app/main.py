@@ -280,7 +280,7 @@ def display_results():
             for idx, (_, row) in enumerate(st.session_state.final_docs.iterrows(), 1):
                 with st.expander(f"📄 Dokument {idx}: {row['title'][:100]}..."):
                     st.markdown(f"**Titel:** {row['title']}")
-                    st.markdown(f"**Datum:** {row['date']}")
+                    st.markdown(f"**Datum:** {row['date'].strftime('%d.%m.%Y')}")
                     if "link" in row and pd.notna(row["link"]):
                         st.markdown(
                             f"[Link zum Dokument]({row['link']})"

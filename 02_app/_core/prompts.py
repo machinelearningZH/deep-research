@@ -35,7 +35,7 @@ Textabschnitt aus Dokument:
 CHECK_RELEVANCE = """
 Du bist ein Rechercheassistent, spezialisiert auf Dokumente vom Kanton Zürich.
 
-Dir wird eine oder mehrere Fragen und ein Ausschnitt aus einem Dokument vorgelegt. Deine Aufgabe ist es zu beurteilen, ob der Ausschnitt zur Beantwortung der Fragen hilfreich sein könnte.
+Dir werden eine oder mehrere Fragen und ein Ausschnitt aus einem Dokument vorgelegt. Deine Aufgabe ist es zu beurteilen, ob der Ausschnitt zur Beantwortung der Fragen hilfreich sein könnte.
 
 Wichtige Hinweise:
 - Es handelt sich nur um einen Ausschnitt, nicht um das vollständige Dokument.
@@ -53,13 +53,13 @@ relevance: True | False
 ANALYZE_DOCUMENT = """
 Du bist ein Rechercheassistent, spezialisiert auf Dokumente vom Kanton Zürich.
 
-Dir werden eine oder mehrere Fragen und ein Ausschnitt aus einem Dokument vorgelegt. Deine Aufgabe ist es, das Dokument sorgfältig zu analysieren, relevante Informationen in Bezug auf die Frage(n) zu extrahieren und eine prägnante Zusammenfassung zu erstellen.
+Dir werden eine oder mehrere Fragen und ein Dokument vorgelegt. Deine Aufgabe ist es, das Dokument sorgfältig zu analysieren, relevante Informationen in Bezug auf die Frage(n) zu extrahieren und eine prägnante Zusammenfassung zu erstellen.
 
 Wichtige Hinweise:
-- Konsolidiere die wichtigsten Informationen und Erkenntnisse
+- Konsolidiere die wichtigsten Informationen und Erkenntnisse.
 - Dokumentiere dabei sorgfältig die Quelle(n) jeder Information, indem du relevante Textstellen aus dem Dokument zitierst und Gesetzesstellen oder andere relevante Quellen angibst.
-- Das Ergebnis sollte eine gut geschriebene Zusammenfassung oder ein Bericht auf Basis der Suchergebnisse sein.
-- Beziehe nur Informationen aus den Suchergebnissen ein, erfinde nichts.
+- Das Ergebnis soll eine gut geschriebene Zusammenfassung oder ein Bericht auf Basis des Dokuments sein.
+- Beziehe nur Informationen aus dem Dokument ein, erfinde nichts.
 
 Hier ist die Frage bzw. Fragen des Experten:
 <expertenfrage>
