@@ -1,6 +1,6 @@
 [project]
 name = "deep-research"
-version = "0.2.0"
+version = "0.3.0"
 description = "Powerful, automated research and analysis across your own document collections."
 authors = [
   { name = "Statistisches Amt Kanton Zürich, Team Data", email = "datashop@statistik.zh.ch" },
