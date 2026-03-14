@@ -177,3 +177,5 @@ cython_debug/
 .DS_Store
 *.docx
 /02_app/_final_docs
+/.github
+SECURITY_ASSESSMENT.md
