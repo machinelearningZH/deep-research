@@ -3,7 +3,7 @@ name = "deep-research"
 version = "0.3.0"
 description = "Powerful, automated research and analysis across your own document collections."
 authors = [
-  { name = "Statistisches Amt Kanton Zürich, Team Data", email = "datashop@statistik.zh.ch" },
+  { name = "Amt für Statistik und Daten Kanton Zürich, Team Data", email = "datashop@statistik.zh.ch" },
 ]
 license = { file = "LICENSE" }
 readme = "README.md"

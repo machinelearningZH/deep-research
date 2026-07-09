@@ -6,7 +6,7 @@ Deine Fragen werden an Clouddienste weitergeleitet und dort verarbeitet. **Gib d
 
 Zu Demonstrationszwecken bezieht die App für die Antworten eine kleine Auswahl von [Kantonsratsprotokollen des Kantons Zürich ein](https://opendata.swiss/de/dataset/zurcher-kantonsratsprotokolle-des-19-jahrhunderts). 
 
-Verantwortlich: Statistisches Amt, [Team Data](mailto:datashop@statistik.zh.ch).
+Verantwortlich: Amt für Statistik und Daten, [Team Data](mailto:datashop@statistik.zh.ch).
 
 App-Version v0.3. Letzte Aktualisierung 08.12.2025
 
