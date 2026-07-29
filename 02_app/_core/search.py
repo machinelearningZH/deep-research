@@ -21,12 +21,9 @@ def initialize_weaviate(collection_name: str = None):
     if collection_name is None:
         collection_name = config["weaviate"]["collection_name"]
 
-    try:
-        client = weaviate.connect_to_local(
-            port=config["weaviate"]["port"], grpc_port=config["weaviate"]["grpc_port"]
-        )
-    except:
-        raise
+    client = weaviate.connect_to_local(
+        port=config["weaviate"]["port"], grpc_port=config["weaviate"]["grpc_port"]
+    )
     collection = client.collections.get(collection_name)
 
     # Register cleanup function

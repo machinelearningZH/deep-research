@@ -1,4 +1,3 @@
-import pandas as pd
 import spacy
 from transformers import AutoTokenizer
 import yaml
@@ -9,9 +8,6 @@ def load_config():
     config_path = Path(__file__).parent / "config_data.yaml"
     with open(config_path, "r", encoding="utf-8") as f:
         return yaml.safe_load(f)
-
-
-config = load_config()
 
 
 nlp = spacy.load(

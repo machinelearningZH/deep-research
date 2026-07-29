@@ -20,7 +20,6 @@ class ResearchWorkflow:
         iterative_workflow: bool = False,
     ):
         self.docs = docs
-        self.config = config
         self.workflow_config = workflow_config
         self.model_config = model_config
         self.iterative_workflow = iterative_workflow
@@ -35,7 +34,6 @@ class ResearchWorkflow:
         self.previous_considerations = []
         self.previous_analysis_results = []
         self.final_docs = None
-        self.iteration = 0
 
     def run_iteration(
         self,
@@ -64,7 +62,7 @@ class ResearchWorkflow:
                 False,
                 self.final_docs if self.final_docs is not None else pd.DataFrame(),
             )
-        
+
         # Always include the original user query as well.
         search_queries.extend([user_query])
 

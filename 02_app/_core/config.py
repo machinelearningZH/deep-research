@@ -28,8 +28,5 @@ class Config:
     def __getitem__(self, key):
         return self._config[key]
 
-    def get(self, key, default=None):
-        return self._config.get(key, default)
-
 
 config = Config()
