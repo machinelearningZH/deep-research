@@ -1,0 +1,55 @@
+publiccodeYmlVersion: 0.5.0
+name: Deep Research KTZH
+url: https://github.com/machinelearningZH/deep-research
+releaseDate: 2025-07-17
+platforms:
+  - web
+  - windows
+  - mac
+  - linux
+categories:
+  - document-management
+developmentStatus: beta
+softwareType: standalone/other
+organisation:
+  uri: https://ld.admin.ch/canton/1
+  name: Zurich
+description:
+  en:
+    localisedName: Deep Research
+    shortDescription: Powerful, automated research and analysis across your own
+      document collections.
+    longDescription: "Deep Research KTZH helps you find answers in large,
+      unstructured document collections — without reading through everything
+      yourself. You describe what you want to find out, and the tool
+      automatically searches your documents, checks the results for relevance,
+      and digs deeper across multiple rounds until it has gathered enough
+      insight to answer properly. It then writes up a structured final report,
+      exportable as a Word document. Because it only searches your own document
+      collection, no outside web content or unrelated sources can sneak into the
+      results. A typical use case at the Canton of Zurich: tracing how a topic
+      was discussed in parliament over the years, by researching across many
+      years' worth of «Kantonsratsprotokolle» at once instead of reading them
+      one by one. The workflow can also be adapted to run with on-premises
+      language models, making it suitable for sensitive or confidential
+      documents."
+    documentation: https://github.com/machinelearningZH/deep-research/blob/main/README.md
+    features:
+      - LLM
+      - Hybrid Search
+      - Iterative Research
+      - Automated Report Generation
+      - docx-Export
+      - On Premise
+legal:
+  license: MIT
+maintenance:
+  type: internal
+  contacts:
+    - name: Team Data, Amt für Statistik und Daten
+      email: datashop@statistik.zh.ch
+localisation:
+  localisationReady: true
+  availableLanguages:
+    - en
+    - de
